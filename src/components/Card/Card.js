@@ -4,7 +4,7 @@ import styles from "./Card.module.scss";
 import CardDetails from "./CardDetails";
 import { useFavouriteContext } from "../../context/FavouriteContext";
 
-const Card = ({ page, results }) => {
+const Card = ({results }) => {
   let display;
   const { addToFavourite } = useFavouriteContext()
 
@@ -12,10 +12,11 @@ const Card = ({ page, results }) => {
     display = results.map((x) => {
       let { id, image, name, status, location } = x;
       const data = [id, image, name, status, location]
-
       const handleFavourite = () => {
         addToFavourite(id, data)
       }
+
+      let page = "/"
 
       // console.log("Dataaaaa===>", id, image, name, status, location)
       return (

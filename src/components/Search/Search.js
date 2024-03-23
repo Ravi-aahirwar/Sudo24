@@ -1,26 +1,16 @@
-import React, { useState } from "react";
-import styles from "./Search.module.scss";
-import { useFavouriteContext } from "../../context/FavouriteContext";
+import React from 'react'
+import { useFavouriteContext } from '../../context/FavouriteContext'
 
-const Search = ({ setSearch, updatePageNumber }) => {
-  // const { handleSearch } = useFavouriteContext()
+const Search = ({ handleSearchValue }) => {
+
+
   return (
-    <form
-      className={`${styles.search} d-flex flex-sm-row flex-column align-items-center justify-content-center gap-4 mb-5`}
-    >
-      <input
-        // onChange={handleSearch}
-        placeholder="Search for characters"
-        className={styles.input}
-        type="text"
-      />
-      <button
-        className={`${styles.btn} btn btn-primary fs-5`}
-      >
-        Search
-      </button>
-    </form>
-  );
-};
+    <div>
+      <div style={{margin:"10px 10px", marginLeft:"7rem", width:"400px"}} >
+        <input type="text" style={{padding:"6px 10px", borderRadius:"5px"}} onChange={handleSearchValue} placeholder="Search" />
+      </div>
+    </div>
+  )
+}
 
-export default Search;
+export default Search

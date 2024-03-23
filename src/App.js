@@ -8,6 +8,8 @@ import Episodes from './Pages/Episodes';
 import Location from './Pages/Location';
 import CardDetails from './components/Card/CardDetails';
 import Favourite from './Pages/Favourite';
+import Login from './Pages/Login';
+import SignUp from './Pages/Signup';
 
 const client = new ApolloClient({
   uri: 'https://rickandmortyapi.com/graphql',
@@ -31,6 +33,8 @@ function App() {
           <Route path="/location" element={<Location />} />
           <Route path="/location/:id" element={<CardDetails />} />
           <Route path="/favourite" element={<Favourite/>} />
+          <Route path='/login' element={<Login/>} />
+          <Route path='/signup' element={<SignUp/>} />
         </Routes>
       </Router>
     </ApolloProvider>

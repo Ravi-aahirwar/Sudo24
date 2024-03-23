@@ -1,0 +1,84 @@
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.outer-div {
+  border: 1px solid blue;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.outer-div img {
+  height: 200px;
+  width: 200px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+.nav-links{
+  text-decoration: none;
+}
+.nav-bar li {
+  font-size: 1.5rem;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.login-outer-div{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-inner-div{
+  background: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0.3rem 2rem 0.7rem;
+  border-radius: 5px;
+}
+.login-inner-div input{
+  width: 95%;
+  border: 1px solid rgb(112, 102, 102);
+  padding: 9px;
+  margin: 5px 9px;
+  border-radius: 5px;
+}
+.login-inner-div label{
+  padding: 9px 10px;
+}
+.google-login input{
+  cursor: pointer;
+  width: 100%;
+}
+.login-inner-div p,h3{
+  cursor: pointer;
+  text-decoration: none;
+}
+/* user img  */
+.user-img{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.user-img span{
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.user-img img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+}
